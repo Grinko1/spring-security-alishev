@@ -13,12 +13,12 @@ import org.springframework.stereotype.Component;
 import java.util.Collections;
 
 @Component
-public class AuthProviderImpl implements AuthenticationProvider {
+public class AuthProviderImplRestForExample implements AuthenticationProvider {
 
     private final PersonDetailsService personDetailsService;
 
     @Autowired
-    public AuthProviderImpl(PersonDetailsService personDetailsService) {
+    public AuthProviderImplRestForExample(PersonDetailsService personDetailsService) {
         this.personDetailsService = personDetailsService;
     }
 
